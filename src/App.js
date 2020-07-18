@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
+import HooksCounterFour from './components/HooksCounterFour';
 // import ClassCounter from './components/ClassCounter';
 // import ClassCounterTwo from './components/ClassCounterTwo';
 // import HooksCounter from './components/HooksCounter';
 // import HooksCounterTwo from './components/HooksCounterTwo';
-import HooksCounterThree from './components/HooksCounterThree';
+// import HooksCounterThree from './components/HooksCounterThree';
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       {/* <ClassCounterTwo /> */}
       {/* <HooksCounter /> */}
       {/* <HooksCounterTwo /> */}
-      <HooksCounterThree />
+      {/* <HooksCounterThree /> */}
+      <HooksCounterFour /> 
     </div>
   );
 }
