@@ -2,6 +2,14 @@ import React, {useState} from 'react'
 
 function HooksCounterFour() {
     const [items, setItems] = useState([])
+
+    const addItem = () => {
+        setItems([...items, {
+            id: items.id,
+            value: Math.floor(Math.random() *10 ) +1 
+        }])
+    }
+
     return (
         <div>
             <button onClick={addItem} >Add a number </button>
