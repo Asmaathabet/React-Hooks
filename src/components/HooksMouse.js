@@ -17,6 +17,12 @@ function HooksMouse() {
         // thats mean the same of [componentDidMount]
      console.log('useEffect Called')
      window.addEventListener('mousemove', logMousePosition)
+    // lesson 10 - use Effect clean up 
+     return () =>{
+         console.log("component unMounting code | componentWillUnmount")
+         window.removeEventListener('mousemove', logMousePosition)
+     }
+
     },[])
 
     return (
